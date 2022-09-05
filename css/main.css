@@ -1,0 +1,243 @@
+/*index*/
+/*header*/
+.CuerpoIndex, footer, .main__nosotros {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  text-align: center; }
+
+/*-------HEADER----------*/
+.bg-colorHeader {
+  background-color: #4d85ce; }
+
+.Logo {
+  width: 7rem;
+  height: 7rem; }
+
+header .TituloMeditech {
+  margin: 0.2rem;
+  padding: 0.5rem; }
+
+header .TituloMeditech :hover, header header .TituloMeditech:active, header header .TituloMeditech:focus {
+  color: #ffffff;
+  transition: color .15s ease-in-out; }
+
+header nav li {
+  margin: 1rem;
+  padding: 5px 3.5px;
+  border: 1px solid #ffffffba;
+  border-radius: .25rem;
+  color: #ffffff;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out; }
+
+header nav li:hover, header nav li:active, header nav li:focus {
+  color: #ffffff;
+  background-color: #ffffff; }
+
+/*------main index-------*/
+.bg-colorMain {
+  background-color: #d4ffff;
+  padding: 20px; }
+
+.CuerpoIndex {
+  grid-template-columns: auto;
+  grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+  grid-template-areas: "section2" "section3__imgmuestra2" "section4" "section5__imgmuestra3"; }
+  .CuerpoIndex .section2 {
+    grid-area: section2;
+    margin: 0.2rem;
+    padding: 0.5rem; }
+  .CuerpoIndex .section2__nuestrasfunciones {
+    color: black;
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #000000ba;
+    border-radius: .25rem;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif; }
+  .CuerpoIndex .section2__nuestrasfunciones__p {
+    color: black;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Nanum Gothic', sans-serif; }
+  .CuerpoIndex .section3__imgmuestra2 {
+    grid-area: section3__imgmuestra2;
+    width: 23rem;
+    height: 20rem; }
+  .CuerpoIndex .section4 {
+    grid-area: section4;
+    margin: 0.2rem;
+    padding: 0.5rem; }
+  .CuerpoIndex .section4__nuestrosserviciosyproductos {
+    color: black;
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #000000ba;
+    border-radius: .25rem;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif; }
+  .CuerpoIndex .section4__nuestrosserviciosyproductos__P {
+    color: black;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Nanum Gothic', sans-serif; }
+  .CuerpoIndex .section5__imgmuestra3 {
+    grid-area: section5__imgmuestra3;
+    width: 23rem;
+    height: 20rem; }
+
+/*------- Footer------- */
+footer {
+  background-color: #4d85ce;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.3fr;
+  grid-template-areas: "footer__div1 footer__div2" "footer__div3 footer__div3 " "section6 section6"; }
+  footer .footer__div1 {
+    grid-area: footer__div1;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    list-style: none;
+    color: black; }
+  footer .footer__div2 {
+    grid-area: footer__div2;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    list-style: none;
+    color: black; }
+  footer .footer__div3 {
+    grid-area: footer__div3;
+    margin-top: 0.5rem; }
+  footer .section6 {
+    grid-area: section6;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: black; }
+
+/*----- main nosotros --------*/
+.main__nosotros {
+  grid-template-columns: 30rem;
+  grid-template-rows: 0.1fr 0.2fr 1fr 2fr;
+  grid-template-areas: "Nosotros" "Historia" "imgNosotros" "Historia__parrafo"; }
+  .main__nosotros .Nosotros {
+    grid-area: Nosotros;
+    color: black;
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #000000ba;
+    border-radius: .25rem;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    padding: 1rem; }
+  .main__nosotros .Historia {
+    grid-area: Historia;
+    color: black;
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #000000ba;
+    border-radius: .25rem;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    padding: 1rem; }
+  .main__nosotros .Historia__parrafo {
+    grid-area: Historia__parrafo;
+    margin: 0.2rem;
+    padding: 1rem;
+    color: black;
+    padding: 3rem;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Nanum Gothic', sans-serif; }
+  .main__nosotros .imgNosotros {
+    grid-area: imgNosotros;
+    margin: 1rem;
+    padding: 1rem;
+    width: 23rem;
+    height: 20rem; }
+
+/*----- Productos -----*/
+/*------ Galeria ----*/
+/*------ mediaqueries----*/
+@media screen and (min-width: 768px) {
+  .CuerpoIndex {
+    grid-template-columns: auto;
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+    grid-template-areas: "section2" "section3__imgmuestra2" "section4" "section5__imgmuestra3"; }
+    .CuerpoIndex .section3__imgmuestra2 {
+      width: 32rem;
+      height: 24rem; }
+    .CuerpoIndex .section5__imgmuestra3 {
+      width: 32rem;
+      height: 24rem; }
+  .main__nosotros {
+    grid-template-columns: auto;
+    grid-template-rows: 0.1fr 0.2fr 1fr 1fr;
+    grid-template-areas: "Nosotros" "Historia" "imgNosotros" "Historia__parrafo"; }
+    .main__nosotros .imgNosotros {
+      width: 32rem;
+      height: 24rem; } }
+
+@media screen and (min-width: 1024px) {
+  /*----- index-----*/
+  /*----- header-----*/
+  /*----- Main -----*/
+  .CuerpoIndex {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "section3__imgmuestra2 section2 " "section4 section5__imgmuestra3"; }
+    .CuerpoIndex .section1__imgmuestra1 {
+      width: 40rem;
+      height: 25rem; }
+    .CuerpoIndex .section2 {
+      margin: 0.2rem;
+      padding: 0.5rem; }
+    .CuerpoIndex .section3__imgmuestra2 {
+      width: 40rem;
+      height: 25rem;
+      margin: 0.5rem; }
+    .CuerpoIndex .section5__imgmuestra3 {
+      width: 40rem;
+      height: 25rem; }
+    .CuerpoIndex .section4 {
+      margin: 0.8rem;
+      padding: 0.5rem; }
+    .CuerpoIndex .section5__imgmuestra3 {
+      width: 23rem;
+      height: 20rem; }
+  /*---- Footer-----*/
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr;
+    grid-template-areas: "footer__div1 footer__div2 footer__div3" "section6 section6 section6"; }
+  /*------- Nosotros ---------*/
+  .main__nosotros {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.1fr 1fr;
+    grid-template-areas: "Nosotros Nosotros" "Historia imgNosotros" "Historia__parrafo imgNosotros";
+    margin: 0rem 4rem;
+    padding: 0rem; }
+  .Nosotros {
+    margin: 2rem;
+    padding: 0rem; }
+  .Historia__parrafo {
+    margin: 0.5rem;
+    padding: 0.8rem 2rem; }
+  .imgNosotros {
+    width: 30rem;
+    height: 20rem; }
+  /*----------Galeria--------*/
+  .main__galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 2fr 2fr;
+    grid-template-areas: "Galeria Galeria Galeria" "desfibrilador rayos-x electrocardiografo"  "electrobisturi maquinaDeAnestesia lamparaCielitica"; } }
