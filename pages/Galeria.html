@@ -28,7 +28,9 @@
         <div class="row">
             <nav class="col-12 navbar navbar-expand-lg bg-colormenu">
                 <div class="container-fluid">
-                    <img src="../img/Logo.png" alt="logo" class="Logo img-fluid">
+                    <a href="../index.html">
+                        <img src="../img/Logo.png" alt="logo" class="Logo img-fluid">
+                    </a>                     
                     <h1 class="TituloMeditech">  
                         <a class="navbar-brand" href="../index.html">MEDITECH</a>
                     </h1>
@@ -59,7 +61,7 @@
 
 
     <!-- Contenido de la pagina galeria -->
-    <main class="container bg-colorMain">
+    <main class="container bg-colorMain main__galeria">
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
@@ -112,50 +114,50 @@
         </div>
           
 
-        <div class="row justify-content-center gap-5 mt-4">
-            <div class="card col-xl-4 col-md-6"  style="width: 18rem;">
+        <div class="row justify-content-center gap-5 mt-4 galeria__productos">
+            <div class="card card__desfibrilador "  style="width: 18rem;">
                 <img src="../img/desfibrilador.png" class="card-img-top" alt="Desfibrilador">
                 <div class="card-body">
                   <h5 class="card-title">Desfibrilador</h5>
                 </div>
             </div>
             
-            <div class="card col-xl-4 col-md-6" style="width: 18rem;">
+            <div class="card card__electrobisturi" style="width: 18rem;">
                 <img src="../img/electrobisturi.png" class="card-img-top" alt="Electrobisturi">
                 <div class="card-body">
                   <h5 class="card-title">Electrobisturi</h5>
                 </div>
             </div>
             
-            <div class="card col-xl-4 col-md-6" style="width: 18rem;">
+            <div class="card card__electrocardiografo" style="width: 18rem;">
                 <img src="../img/electrocardiografo.png" class="card-img-top" alt="Electrocardiografo">
                 <div class="card-body">
                   <h5 class="card-title">Electrocardiografo</h5>
                 </div>
             </div>
               
-            <div class="card col-xl-4 col-md-6"  style="width: 18rem;">
+            <div class="card card__lamparaCielitica"  style="width: 18rem;">
                 <img src="../img/lampara-cielitica.jpg" class="card-img-top" alt="LamparaCielitica">
                 <div class="card-body">
                     <h5 class="card-title">Lampara cielitica</h5>
                 </div>
             </div>
             
-            <div class="card col-xl-4 col-md-6" style="width: 18rem;">
+            <div class="card card__maquinaDeAnestesia" style="width: 18rem;">
                 <img src="../img/Maquina-de-anestesia.png" class="card-img-top" alt="MaquinaDeAnestesia">
                 <div class="card-body">
                     <h5 class="card-title">Maquina de anestesia</h5>
                 </div>
             </div>
             
-            <div class="card col-xl-4 col-md-6" style="width: 18rem;">
+            <div class="card card__rayos-x" style="width: 18rem;">
                 <img src="../img/rayos-x.jpg" class="card-img-top" alt="Rayos-x">
                 <div class="card-body">
                     <h5 class="card-title">Rayos-X</h5>
                 </div>
             </div>
 
-         </div class="row">
+         </div>
     
     </main>
 
@@ -163,25 +165,35 @@
     <!-- Pie de pagina -->
     <footer class="piedepagina">
     
-        <div class="footer__div1">
-            <h3 class="redesSociales"> Redes sociales </h3>
-            <ul class="redesSociales__lista">
-                <li class="facebook"> Facebook </li>     
-                <li class="instagram"> Instagram </li>    
-                <li class="twitter"> Twitter </li>          
-            
-            </ul>
-        </div>
-        
-        <div class="footer__div2">
-            <h3 class="informacionContacto"> Informacion contacto</h3>
-            <ul class="informacionContacto__lista">
-                <li class="correo"> Correo de contacto </li>
-                <li class="telefono"> Telefono </li>
-                <li class="horarios"> Horarios de atencion </li>
-                <li class="direccion"> Direccion </li>
-            </ul>
-        </div>    
+      <div class="footer__div1">
+        <h3 class="redesSociales"> Redes sociales </h3>
+        <ul class="redesSociales__lista">
+            <a href="https://www.facebook.com" target="_blank" class="facebook">
+                <li>
+                    <p><img src="../img/facebook.png" alt="logo_facebook" class="logo_facebook">Facebook</p>
+                </li> 
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="instagram">
+                <li>
+                    <p><img src="../img/instagram.png" alt="logo_instagram" class="logo_instagram">Instagram</p>
+                </li> 
+            </a>                  
+            <a href="https://www.twitter.com" target="_blank" class="twitter">
+                <li>
+                    <p><img src="../img/twitter.png" alt="logo_twitter" class="logo_twitter">Twitter</p>
+                </li> 
+            </a>               
+        </ul>
+      </div>
+      <div class="footer__div2">
+        <h3 class="informacionContacto"> Informacion contacto</h3>
+        <ul class="informacionContacto__lista">
+          <li class="correo">Correo: meditech@email.com </li>
+          <li class="telefono">Telefono: +57 760 #### </li>
+          <li class="horarios">Horarios: 7:00am - 6:00Pm  </li>
+          <li class="direccion">Direccion: Portal 80 </li>
+        </ul>
+      </div>      
             
         <!-- Ubicacion en el mapa -->
 

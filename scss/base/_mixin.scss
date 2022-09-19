@@ -39,7 +39,6 @@
 
 @mixin TitulosParrafos{
     color: black;
-    margin-top: 1rem;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid #000000ba;
@@ -57,7 +56,6 @@
 
 @mixin ParrafosHistoria{
     color: black;
-    padding: 3rem;;
     text-align: center;
     text-align: justify;
     font-family: 'Nanum Gothic', sans-serif;

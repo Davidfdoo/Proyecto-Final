@@ -1,6 +1,6 @@
 /*index*/
 /*header*/
-.CuerpoIndex, footer, .main__nosotros {
+.CuerpoIndex, footer, .main__nosotros, .main__galeria .galeria__productos, .main__contacto {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
 .bg-colorHeader {
   background-color: #4d85ce; }
 
-.Logo {
+header .Logo {
   width: 7rem;
   height: 7rem; }
 
@@ -20,7 +20,7 @@ header .TituloMeditech {
   margin: 0.2rem;
   padding: 0.5rem; }
 
-header .TituloMeditech :hover, header header .TituloMeditech:active, header header .TituloMeditech:focus {
+header .TituloMeditech :hover, header .TituloMeditech:active, header .TituloMeditech:focus {
   color: #ffffff;
   transition: color .15s ease-in-out; }
 
@@ -51,7 +51,6 @@ header nav li:hover, header nav li:active, header nav li:focus {
     padding: 0.5rem; }
   .CuerpoIndex .section2__nuestrasfunciones {
     color: black;
-    margin-top: 1rem;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid #000000ba;
@@ -73,7 +72,6 @@ header nav li:hover, header nav li:active, header nav li:focus {
     padding: 0.5rem; }
   .CuerpoIndex .section4__nuestrosserviciosyproductos {
     color: black;
-    margin-top: 1rem;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid #000000ba;
@@ -103,6 +101,47 @@ footer {
     font-family: 'Nanum Gothic', sans-serif;
     list-style: none;
     color: black; }
+    footer .footer__div1 .redesSociales__lista {
+      list-style: none; }
+      footer .footer__div1 .redesSociales__lista .facebook {
+        display: inline;
+        color: black;
+        text-decoration: none; }
+        footer .footer__div1 .redesSociales__lista .facebook .logo_facebook {
+          display: inline;
+          width: 1rem;
+          height: 1rem;
+          margin: 0.2rem;
+          padding: 0; }
+      footer .footer__div1 .redesSociales__lista .facebook :hover, footer .footer__div1 .redesSociales__lista .facebook:active, footer .footer__div1 .redesSociales__lista .facebook:focus {
+        color: #ffffff;
+        transition: color .15s ease-in-out; }
+      footer .footer__div1 .redesSociales__lista .instagram {
+        display: inline;
+        color: black;
+        text-decoration: none; }
+        footer .footer__div1 .redesSociales__lista .instagram .logo_instagram {
+          display: inline;
+          width: 1rem;
+          height: 1rem;
+          margin: 0.2rem;
+          padding: 0; }
+      footer .footer__div1 .redesSociales__lista .instagram :hover, footer .footer__div1 .redesSociales__lista .instagram:active, footer .footer__div1 .redesSociales__lista .instagram:focus {
+        color: #ffffff;
+        transition: color .15s ease-in-out; }
+      footer .footer__div1 .redesSociales__lista .twitter {
+        display: inline;
+        color: black;
+        text-decoration: none; }
+        footer .footer__div1 .redesSociales__lista .twitter .logo_twitter {
+          display: inline;
+          width: 1rem;
+          height: 1rem;
+          margin: 0.2rem;
+          padding: 0; }
+      footer .footer__div1 .redesSociales__lista .twitter :hover, footer .footer__div1 .redesSociales__lista .twitter:active, footer .footer__div1 .redesSociales__lista .twitter:focus {
+        color: #ffffff;
+        transition: color .15s ease-in-out; }
   footer .footer__div2 {
     grid-area: footer__div2;
     margin: 0.3rem;
@@ -124,52 +163,94 @@ footer {
 /*----- main nosotros --------*/
 .main__nosotros {
   grid-template-columns: 30rem;
-  grid-template-rows: 0.1fr 0.2fr 1fr 2fr;
-  grid-template-areas: "Nosotros" "Historia" "imgNosotros" "Historia__parrafo"; }
+  grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+  grid-template-areas: "Nosotros" "imgNosotros" "Historia" "Historia__parrafo"; }
   .main__nosotros .Nosotros {
     grid-area: Nosotros;
     color: black;
-    margin-top: 1rem;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid #000000ba;
     border-radius: .25rem;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    margin: 1rem;
+    margin: 1rem 0.2rem;
     padding: 1rem; }
   .main__nosotros .Historia {
     grid-area: Historia;
     color: black;
-    margin-top: 1rem;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid #000000ba;
     border-radius: .25rem;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    margin: 1rem;
+    margin: 0.2rem;
     padding: 1rem; }
   .main__nosotros .Historia__parrafo {
     grid-area: Historia__parrafo;
-    margin: 0.2rem;
-    padding: 1rem;
+    margin: 0.1rem;
+    padding: 1rem 4rem;
     color: black;
-    padding: 3rem;
     text-align: center;
     text-align: justify;
     font-family: 'Nanum Gothic', sans-serif; }
   .main__nosotros .imgNosotros {
     grid-area: imgNosotros;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
     width: 23rem;
     height: 20rem; }
 
 /*----- Productos -----*/
 /*------ Galeria ----*/
+.main__galeria .galeria__productos {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "card__desfibrilador" "card__electrocardiografo" "card__electrobisturi" "card__maquinaDeAnestesia" "card__lamparaCielticia" "card__rayos-x"; }
+  .main__galeria .galeria__productos .card__desfibrilador {
+    grid-area: card__desfibrilador; }
+  .main__galeria .galeria__productos .card__electrocardiografo {
+    grid-area: card__electrocardiografo; }
+  .main__galeria .galeria__productos .card__electrobisturi {
+    grid-area: card__electrobisturi; }
+  .main__galeria .galeria__productos .card__maquinaDeAnestesia {
+    grid-area: card__maquinaDeAnestesia; }
+  .main__galeria .galeria__productos .card__lamparaCielticia {
+    grid-area: card__lamparaCielitica; }
+  .main__galeria .galeria__productos .card__rayos-x {
+    grid-area: card__rayos-x; }
+
+/*------ Contacto ----*/
+.main__contacto {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.5fr 0.1fr;
+  grid-template-areas: "Contacto" "imagen__bienvenida" "formulario__contacto"; }
+  .main__contacto .Contacto {
+    grid-area: Contacto;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #000000ba;
+    border-radius: .25rem;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.1rem;
+    padding: 1.3rem;
+    font-size: 2.5rem; }
+  .main__contacto .imagen__bienvenida {
+    grid-area: imagen__bienvenida;
+    margin: 3rem;
+    padding: 1rem;
+    width: 23rem;
+    height: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+  .main__contacto .formulario__contacto {
+    grid-area: formulario__contacto; }
+
 /*------ mediaqueries----*/
 @media screen and (min-width: 768px) {
+  /*-------- index -------*/
   .CuerpoIndex {
     grid-template-columns: auto;
     grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
@@ -180,18 +261,35 @@ footer {
     .CuerpoIndex .section5__imgmuestra3 {
       width: 32rem;
       height: 24rem; }
+  /*--------Nosotros--------*/
   .main__nosotros {
     grid-template-columns: auto;
-    grid-template-rows: 0.1fr 0.2fr 1fr 1fr;
-    grid-template-areas: "Nosotros" "Historia" "imgNosotros" "Historia__parrafo"; }
+    grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr;
+    grid-template-areas: "Nosotros" "imgNosotros" "Historia" "Historia__parrafo"; }
     .main__nosotros .imgNosotros {
+      width: 32rem;
+      height: 24rem; }
+    .main__nosotros .Historia__parrafo {
+      margin: 0.2rem;
+      padding: 1rem 4rem; }
+  /*--------Productos--------*/
+  /*--------galeria----------*/
+  .main__galeria .galeria__productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "card__desfibrilador card__electrocardiografo" "card__electrobisturi card__maquinaDeAnestesia" "card__lamparaCielticia card__rayos-x"; }
+  /*--------Contacto---------*/
+  .main__contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+    grid-template-areas: "Contacto" "imagen__bienvenida" "formulario__contacto"; }
+    .main__contacto .imagen__bienvenida {
+      grid-area: imagen__bienvenida;
       width: 32rem;
       height: 24rem; } }
 
 @media screen and (min-width: 1024px) {
-  /*----- index-----*/
-  /*----- header-----*/
-  /*----- Main -----*/
+  /*--------- index----------*/
   .CuerpoIndex {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -215,7 +313,6 @@ footer {
     .CuerpoIndex .section5__imgmuestra3 {
       width: 23rem;
       height: 20rem; }
-  /*---- Footer-----*/
   footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.3fr;
@@ -224,15 +321,13 @@ footer {
   .main__nosotros {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.3fr 0.1fr 1fr;
-    grid-template-areas: "Nosotros Nosotros" "Historia imgNosotros" "Historia__parrafo imgNosotros";
-    margin: 0rem 4rem;
-    padding: 0rem; }
+    grid-template-areas: "Nosotros Nosotros" "Historia imgNosotros" "Historia__parrafo imgNosotros"; }
   .Nosotros {
     margin: 2rem;
     padding: 0rem; }
   .Historia__parrafo {
-    margin: 0.5rem;
-    padding: 0.8rem 2rem; }
+    margin: 0.3rem;
+    padding: 0.8rem 1rem; }
   .imgNosotros {
     width: 30rem;
     height: 20rem; }
@@ -240,4 +335,17 @@ footer {
   .main__galeria {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 2fr 2fr;
-    grid-template-areas: "Galeria Galeria Galeria" "desfibrilador rayos-x electrocardiografo"  "electrobisturi maquinaDeAnestesia lamparaCielitica"; } }
+    grid-template-areas: "Galeria Galeria Galeria" "desfibrilador rayos-x electrocardiografo"  "electrobisturi maquinaDeAnestesia lamparaCielitica"; }
+  /*----------Productos--------*/
+  .main__galeria .galeria__productos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "card__desfibrilador card__electrocardiografo card__electrobisturi" " card__maquinaDeAnestesia card__lamparaCielticia card__rayos-x"; }
+  /*----------Contacto--------*/
+  .main__contacto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    grid-template-areas: "Contacto Contacto" "formulario__contacto imagen__bienvenida"; }
+    .main__contacto .imagen__bienvenida {
+      width: 32rem;
+      height: 30rem; } }

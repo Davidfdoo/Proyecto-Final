@@ -28,7 +28,9 @@
         <div class="row">
             <nav class="col-12 navbar navbar-expand-lg bg-colormenu">
                 <div class="container-fluid">
-                    <img src="../img/Logo.png" alt="logo" class="Logo img-fluid">
+                    <a href="../index.html">
+                        <img src="../img/Logo.png" alt="logo" class="Logo img-fluid">
+                    </a>
                     <h1 class="TituloMeditech">  
                         <a class="navbar-brand" href="../index.html">MEDITECH</a>
                     </h1>
@@ -59,49 +61,52 @@
 
 
     <!-- Contenido de la pagina contacto -->
-    <main class="container bg-colorMain justify-content-center">
-        <h2 class="text-center">CONTACTO</h2>
+    <main class="container bg-colorMain justify-content-center main__contacto">
+        <h2 class="text-center Contacto">CONTACTO</h2>
 
-        <form>
-            <div class="mb-3">
-                <label for="Nombres y apellidos" class="form-label">Nombres y apellidos</label>
-                <input type="text" class="form-control" id="Nombre" placeholder="Completa tu nombre">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Completa tu email</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-              </div>
-            <div class="mb-3">
-                <label for="Telefono" class="form-label">Telefono</label>
-                <input type="text" class="form-control" id="Telefono" placeholder="Completa tu telefono">
-            </div>
-            <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>Selecciona tu pais</option>
-                <option value="1">Colombia</option>
-                <option value="2">Argentina</option>
-                <option value="3">Peru</option>
-                <option value="4">Chile</option>
-                <option value="5">Brasil</option>
-                <option value="6">Ecuador</option>
-                <option value="7">Mexico</option>
-                <option value="8">Honduras</option>
-            </select>
-            <div class="mb-3">
-                <label for="PreguntaCliente" class="form-label">Dejanos tu pregunta</label>
-                <textarea class="form-control" id="PreguntaCliente" placeholder="Escribe tu pregunta aqui" rows="10"></textarea>
-            </div>
-            <div class="row ">
-                <div class="col-6 text-center">
-                    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btn-check-outlined">Presione para enviar</label><br>
+        <img src="../img/Welcome-contacto.jpg" alt="imagen-bienvenida" class="imagen__bienvenida">
+
+        <div class="formulario__contacto"">
+            <form>
+                <div class="mb-3">
+                    <label for="Nombres y apellidos" class="form-label fw-bolder fs-4">Nombres y apellidos</label>
+                    <input type="text" class="form-control" id="Nombre" placeholder="Completa tu nombre">
                 </div>
-                <div class="col-6 text-center">
-                    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btn-check-outlined">Borrar valores</label><br>  
-                </div>   
-            </div>        
-        </form>
-
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-bolder fs-4">Completa tu email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                <div class="mb-3">
+                    <label for="Telefono" class="form-label fw-bolder fs-4">Telefono</label>
+                    <input type="text" class="form-control" id="Telefono" placeholder="Completa tu telefono">
+                </div>
+                <select class="form-select mb-3" aria-label="Default select example">
+                    <option selected>Selecciona tu pais</option>
+                    <option value="1">Colombia</option>
+                    <option value="2">Argentina</option>
+                    <option value="3">Peru</option>
+                    <option value="4">Chile</option>
+                    <option value="5">Brasil</option>
+                    <option value="6">Ecuador</option>
+                    <option value="7">Mexico</option>
+                    <option value="8">Honduras</option>
+                </select>
+                <div class="mb-3">
+                    <label for="PreguntaCliente" class="form-label fw-bolder fs-4">Dejanos tu pregunta</label>
+                    <textarea class="form-control" id="PreguntaCliente" placeholder="Escribe tu pregunta aqui" rows="10"></textarea>
+                </div>
+                <div class="row ">
+                    <div class="col-6 text-center">
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btn-check-outlined">Presione para enviar</label><br>
+                    </div>
+                    <div class="col-6 text-center">
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btn-check-outlined">Borrar valores</label><br>  
+                    </div>   
+                </div>        
+            </form>
+        </div>
 
     </main>
 
@@ -112,22 +117,32 @@
         <div class="footer__div1">
             <h3 class="redesSociales"> Redes sociales </h3>
             <ul class="redesSociales__lista">
-                <li class="facebook"> Facebook </li>     
-                <li class="instagram"> Instagram </li>    
-                <li class="twitter"> Twitter </li>          
-            
+                <a href="https://www.facebook.com" target="_blank" class="facebook">
+                    <li>
+                        <p><img src="../img/facebook.png" alt="logo_facebook" class="logo_facebook">Facebook</p>
+                    </li> 
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram">
+                    <li>
+                        <p><img src="../img/instagram.png" alt="logo_instagram" class="logo_instagram">Instagram</p>
+                    </li> 
+                </a>                  
+                <a href="https://www.twitter.com" target="_blank" class="twitter">
+                    <li>
+                        <p><img src="../img/twitter.png" alt="logo_twitter" class="logo_twitter">Twitter</p>
+                    </li> 
+                </a>               
             </ul>
         </div>
-        
         <div class="footer__div2">
             <h3 class="informacionContacto"> Informacion contacto</h3>
             <ul class="informacionContacto__lista">
-                <li class="correo"> Correo de contacto </li>
-                <li class="telefono"> Telefono </li>
-                <li class="horarios"> Horarios de atencion </li>
-                <li class="direccion"> Direccion </li>
+                <li class="correo">Correo: meditech@email.com </li>
+                <li class="telefono">Telefono: +57 760 #### </li>
+                <li class="horarios">Horarios: 7:00am - 6:00Pm  </li>
+                <li class="direccion">Direccion: Portal 80 </li>
             </ul>
-        </div>    
+        </div>     
             
         <!-- Ubicacion en el mapa -->
 

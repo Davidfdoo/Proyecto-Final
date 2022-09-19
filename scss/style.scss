@@ -8,16 +8,15 @@
 .bg-colorHeader{
     background-color: $color-headerAndFooter;
 }
-
-.Logo{
-    width: 7rem;
-    height: 7rem;
-}
 header {
+    .Logo{
+        width: 7rem;
+        height: 7rem;
+    }
     .TituloMeditech{
         @include box-modelSection(0.2rem, 0.5rem);   
     }
-    .TituloMeditech :hover, header .TituloMeditech:active, header .TituloMeditech:focus{
+    .TituloMeditech :hover, .TituloMeditech:active, .TituloMeditech:focus{
         color: #ffffff;
         transition: color .15s ease-in-out;
     }
@@ -93,11 +92,56 @@ footer{
                         "section6 section6";
     .footer__div1{
         grid-area:footer__div1;
-        @include footerStyleLi
+        @include footerStyleLi;
+        .redesSociales__lista{
+            list-style: none;
+            .facebook{
+                display: inline;
+                color: black;
+                text-decoration: none;
+                .logo_facebook{
+                    display: inline;
+                    @include MedidaImagen(1rem,1rem);
+                    @include box-modelSection(0.2rem,0);
+                }
+            }
+            .facebook :hover, .facebook:active, .facebook:focus{
+                color: #ffffff;
+                transition: color .15s ease-in-out;
+            }
+            .instagram{
+                display: inline;
+                color: black;
+                text-decoration: none;
+                .logo_instagram{
+                    display: inline;
+                    @include MedidaImagen(1rem,1rem);
+                    @include box-modelSection(0.2rem,0);
+                }
+            }
+            .instagram :hover, .instagram:active, .instagram:focus{
+                color: #ffffff;
+                transition: color .15s ease-in-out;
+            }
+            .twitter{
+                display: inline;
+                color: black;
+                text-decoration: none;
+                .logo_twitter{
+                    display: inline;
+                    @include MedidaImagen(1rem,1rem);
+                    @include box-modelSection(0.2rem,0);
+                }
+            }
+            .twitter :hover, .twitter:active, .twitter:focus{
+                color: #ffffff;
+                transition: color .15s ease-in-out;
+            }
+        }
     }
     .footer__div2{
         grid-area:footer__div2;
-        @include footerStyleLi
+        @include footerStyleLi;
     }
     .footer__div3{
         grid-area: footer__div3 ;
@@ -105,7 +149,7 @@ footer{
     }
     .section6{
         grid-area: section6;
-        @include footerStyleReservText
+        @include footerStyleReservText;
     }
 }
 
@@ -113,30 +157,30 @@ footer{
 .main__nosotros{
     @extend %GridStruct;
     grid-template-columns: 30rem;
-    grid-template-rows: 0.1fr 0.2fr 1fr 2fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
     grid-template-areas: 
                         "Nosotros"
-                        "Historia"
                         "imgNosotros"
+                        "Historia"
                         "Historia__parrafo";
     .Nosotros{
         grid-area: Nosotros;
         @include TitulosParrafos;
-        @include box-modelSection(1rem,1rem);
+        @include box-modelSection(1rem 0.2rem,1rem);
     }
     .Historia{
         grid-area: Historia;
         @include TitulosParrafos;
-        @include box-modelSection(1rem,1rem);
+        @include box-modelSection(0.2rem,1rem);
     }  
     .Historia__parrafo{
         grid-area: Historia__parrafo;
-        @include box-modelSection(0.2rem,1rem);
+        @include box-modelSection(0.1rem,1rem 4rem);
         @include ParrafosHistoria
     } 
     .imgNosotros{
         grid-area: imgNosotros;
-        @include box-modelSection(1rem,1rem);
+        @include box-modelSection(0.5rem,0.5rem);
         @include MedidaImagen(23rem, 20rem)
     }
 
@@ -145,10 +189,70 @@ footer{
 /*----- Productos -----*/
 
 /*------ Galeria ----*/
+.main__galeria{
+    .galeria__productos{
+        @extend %GridStruct;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+                            "card__desfibrilador"
+                            "card__electrocardiografo"
+                            "card__electrobisturi"
+                            "card__maquinaDeAnestesia"
+                            "card__lamparaCielticia"
+                            "card__rayos-x";
+        .card__desfibrilador{
+            grid-area: card__desfibrilador;
+        }
+        .card__electrocardiografo{
+            grid-area: card__electrocardiografo;
+        }
+        .card__electrobisturi{
+            grid-area: card__electrobisturi;
+        }
+        .card__maquinaDeAnestesia{
+            grid-area: card__maquinaDeAnestesia;
+        }
+        .card__lamparaCielticia{
+            grid-area: card__lamparaCielitica;
+        }
+        .card__rayos-x{
+            grid-area: card__rayos-x;
+        }
+    }
+}
+
+/*------ Contacto ----*/
+.main__contacto{
+    @extend %GridStruct;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+    grid-template-areas: 
+                        "Contacto"
+                        "imagen__bienvenida"
+                        "formulario__contacto";
+    .Contacto{
+        grid-area: Contacto;
+        @include TitulosParrafos;
+        @include box-modelSection(0.1rem,1.3rem);
+        font-size: 2.5rem;
+    }
+    .imagen__bienvenida{
+        grid-area: imagen__bienvenida;
+        @include box-modelSection(3rem, 1rem);
+        @include MedidaImagen(23rem, 20rem);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .formulario__contacto{
+        grid-area: formulario__contacto;
+    }
+}
 
 /*------ mediaqueries----*/
 
 @media screen and (min-width:768px){
+
+    /*-------- index -------*/
     .CuerpoIndex{
         grid-template-columns: auto ;
         grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
@@ -165,24 +269,55 @@ footer{
         }
     }
 
+    /*--------Nosotros--------*/
     .main__nosotros{
         grid-template-columns: auto;
-        grid-template-rows: 0.1fr 0.2fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr;
         grid-template-areas: 
                             "Nosotros"
-                            "Historia"
                             "imgNosotros"
+                            "Historia"
                             "Historia__parrafo";
         .imgNosotros{
             @include MedidaImagen(32rem, 24rem)
         } 
+        .Historia__parrafo{
+            @include box-modelSection(0.2rem,1rem 4rem)
+        }
+    }
+
+    /*--------Productos--------*/
+
+    /*--------galeria----------*/
+    .main__galeria{
+        .galeria__productos{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+                                "card__desfibrilador card__electrocardiografo"
+                                "card__electrobisturi card__maquinaDeAnestesia"
+                                "card__lamparaCielticia card__rayos-x";
+        }
+    }
+
+    /*--------Contacto---------*/
+    .main__contacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.1fr;
+        grid-template-areas: 
+                            "Contacto"
+                            "imagen__bienvenida"
+                            "formulario__contacto";
+        .imagen__bienvenida{
+            grid-area: imagen__bienvenida;
+            @include MedidaImagen(32rem, 24rem)
+        }
     }
 }
 
 @media screen and (min-width:1024px){
-    /*----- index-----*/
-    /*----- header-----*/
-    /*----- Main -----*/
+
+    /*--------- index----------*/
     .CuerpoIndex{
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr;
@@ -210,8 +345,6 @@ footer{
         }
     }
 
-    /*---- Footer-----*/
-
     footer{
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr 0.3fr;
@@ -222,7 +355,6 @@ footer{
     }
 
     /*------- Nosotros ---------*/
-
     .main__nosotros{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.3fr 0.1fr 1fr;
@@ -230,22 +362,21 @@ footer{
                             "Nosotros Nosotros"
                             "Historia imgNosotros"
                             "Historia__parrafo imgNosotros";
-       @include box-modelSection(0rem 4rem, 0rem)
+       
     }
 
     .Nosotros{
         @include box-modelSection(2rem, 0rem)
     }
     .Historia__parrafo{
-        @include box-modelSection(0.5rem, 0.8rem 2rem)
+        @include box-modelSection(0.3rem, 0.8rem 1rem)
     }
     .imgNosotros{
         @include MedidaImagen(30rem ,20rem)
     }
 
 
-     /*----------Galeria--------*/
-
+    /*----------Galeria--------*/
     .main__galeria{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.1fr 2fr 2fr;
@@ -253,6 +384,30 @@ footer{
                             "Galeria Galeria Galeria"
                             "desfibrilador rayos-x electrocardiografo" 
                             "electrobisturi maquinaDeAnestesia lamparaCielitica";
+    }
+
+
+    /*----------Productos--------*/
+    .main__galeria{
+        .galeria__productos{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+                                "card__desfibrilador card__electrocardiografo card__electrobisturi"
+                                " card__maquinaDeAnestesia card__lamparaCielticia card__rayos-x";
+        }
+    }
+    
+    /*----------Contacto--------*/
+    .main__contacto{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr;
+        grid-template-areas: 
+                            "Contacto Contacto"
+                            "formulario__contacto imagen__bienvenida";
+        .imagen__bienvenida{
+            @include MedidaImagen(32rem, 30rem)
+        }
     }
 }
 
