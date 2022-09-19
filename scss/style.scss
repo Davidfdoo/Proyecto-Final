@@ -90,6 +90,7 @@ footer{
                         "footer__div1 footer__div2"
                         "footer__div3 footer__div3 "
                         "section6 section6";
+    text-align: left;
     .footer__div1{
         grid-area:footer__div1;
         @include footerStyleLi;
@@ -397,7 +398,7 @@ footer{
                                 " card__maquinaDeAnestesia card__lamparaCielticia card__rayos-x";
         }
     }
-    
+
     /*----------Contacto--------*/
     .main__contacto{
         grid-template-columns: 1fr 1fr;

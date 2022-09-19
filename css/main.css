@@ -93,7 +93,8 @@ footer {
   background-color: #4d85ce;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 0.3fr;
-  grid-template-areas: "footer__div1 footer__div2" "footer__div3 footer__div3 " "section6 section6"; }
+  grid-template-areas: "footer__div1 footer__div2" "footer__div3 footer__div3 " "section6 section6";
+  text-align: left; }
   footer .footer__div1 {
     grid-area: footer__div1;
     margin: 0.3rem;
