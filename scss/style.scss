@@ -153,6 +153,7 @@ footer{
     .footer__div3{
         grid-area: footer__div3 ;
         margin-top: 0.5rem;
+        @include footerStyleLi
     }
     .section6{
         grid-area: section6;
@@ -196,6 +197,7 @@ footer{
 
 /*----- Productos -----*/
 .main__productos{
+    text-align: justify;
     .productos{
         @include TitulosParrafos;
         @include box-modelSection(0.1rem,1.3rem);
